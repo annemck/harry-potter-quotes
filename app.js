@@ -7,23 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const quoteList = document.querySelector('.quote-list');
   
   
-  // Extension: Creation of radio button
-  const radio = document.createElement('input');
-  radio.setAttribute('type', 'radio');
-  radio.setAttribute('value', 'highlight');
-  radio.setAttribute('name', 'highlight');
-  radio.setAttribute('id', 'highlight');
+  // Extension: Creation of checkbox
+  const box = document.createElement('input');
+  box.setAttribute('type', 'checkbox');
+  box.setAttribute('value', 'highlight');
+  box.setAttribute('name', 'highlight');
+  box.setAttribute('id', 'highlight');
 
 
-  // Extension: Creation of radio label
+  // Extension: Creation of checkbox label
   const label = document.createElement('label');
   label.textContent = 'Highlight This Quote!';
   label.setAttribute('for', 'highlight');
   
   
-  // Extension: Adding new label and radio button
+  // Extension: Adding new label and checkbox
   form.appendChild(label);
-  form.appendChild(radio);
+  form.appendChild(box);
   
   
   // Function to add item to the list

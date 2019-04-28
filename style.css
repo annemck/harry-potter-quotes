@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#quote {
+  max-width: 30em;
+  min-height: 5em;
+}
+
+#character {
+  max-width: 30em;
+}
+
+#book {
+  max-width: 30em;
+}
+
+#highlight {
+  order: 0;
+}
+
+button {
+  order: 1;
+  max-width: 16em;
+}
