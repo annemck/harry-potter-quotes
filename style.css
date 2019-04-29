@@ -1,25 +1,26 @@
 body {
+  display: flex;
   background-color: black;
+  background-image: url("./hogwarts.png");
+  background-repeat:no-repeat;
+  background-position: top 17em left 1em;
+  background-size: 215px 315px;
   color: white;
+}
+
+.container {
+  display: flex;
 }
 
 form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  max-width: 22em;
 }
 
 #quote {
-  max-width: 30em;
   min-height: 5em;
-}
-
-#character {
-  max-width: 30em;
-}
-
-#book {
-  max-width: 30em;
 }
 
 #highlight {
@@ -29,4 +30,25 @@ form {
 button {
   order: 1;
   max-width: 16em;
+}
+
+.list {
+  flex-direction: column;
+  margin-left: 10em;
+}
+
+h1 {
+  margin-left: 1.5em;
+}
+
+li {
+  list-style: none;
+  background-color: rgb(117, 138, 146);
+  box-shadow: 3px 5px 15px rgb(112, 123, 128);
+  overflow-wrap: break-word;
+  padding: 2em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 15px 50px 30px;
+  max-width: 30em;
 }
