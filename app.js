@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (highlight) {
       newItem.innerHTML = `<b>${text}</b>`;
-      // newItem.appendChild(individualDelete); - not working
+      // newItem.appendChild(individualDelete);
       newItem.setAttribute('id', 'boldQuote');
     }
     else {
       newItem.innerHTML = text;
-      // newItem.appendChild(individualDelete); - not working
+      // newItem.appendChild(individualDelete);
       newItem.setAttribute('id', 'normalQuote');
     };
     
